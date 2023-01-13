@@ -1,0 +1,241 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ section{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    scroll-snap-align: start;
+	height: 100vh;
+ }
+ .prva{
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+   text-align: center;
+ }
+ .prvidiv{
+   flex: 100%;
+   justify-content: center;
+ }
+ .italic{
+   text-decoration: wavy;
+   animation: text-shadow 1.5s ease-in-out infinite;
+   font-size: 3em;
+   font-weight: 900;
+   line-height: 1;
+   padding-top: 20%;
+ }
+ .druga{
+   background: linear-gradient(-45deg, #e98f73, #e7973c, #d52323, #d58823);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+   text-align: center;
+ }
+ .kraj{
+    background: linear-gradient(-45deg, #f32ca7, #f851ad, #f59f9f, lightcoral);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+ }
+ h1{
+    color:antiquewhite;
+    text-shadow: 1px 1px 4px #000;
+ }
+
+ .welcometext{
+   color:antiquewhite;
+   justify-content: center;
+   text-align: center;
+   text-shadow: 1px 1px 4px #000;
+   
+ }
+ .undertext{
+   padding-top: 10%;
+ }
+ .undertextend{
+   margin-top:30px;
+ }
+
+ .container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+ }
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes text-shadow {
+   0% {  
+       transform: translateY(0);
+       text-shadow: 
+           0 0 0 #ee7752, 
+           0 0 0 #e73c7e, 
+           0 0 0 #23a6d5, 
+           0 0 0 #23d5ab;
+   }
+
+   20% {  
+       transform: translateY(-1em);
+       text-shadow: 
+           0 0.125em 0 #ee7752, 
+           0  0 #e73c7e, 
+           0  0 #23a6d5, 
+           0 -0.25em 0 #23d5ab;
+   }
+
+   40% {  
+       transform: translateY(0.5em);
+       text-shadow: 
+           0 -0.0625em 0 #ee7752, 
+           0 0 0 #e73c7e, 
+           0 0 0 #23a6d5, 
+           0 0.125em 0 #23d5ab;
+   }
+   
+  60% {
+       transform: translateY(-0.25em);
+       text-shadow: 
+           0 0.03125em 0 #ee7752, 
+           0 0 0 #e73c7e, 
+           0 -0 0 #23a6d5, 
+           0 -0.0625em 0 #23d5ab;
+   }
+
+   80% {  
+       transform: translateY(0);
+       text-shadow: 
+           0 0 0 #ee7752, 
+           0 0 0 #e73c7e, 
+           0 0 0 #23a6d5, 
+           0 0 0 #23d5ab;
+   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   * {
+     animation: none !important;
+     transition: none !important;
+   }
+}
+#torta{
+   color:white;
+   background: linear-gradient(-45deg, #ff4500, #ff6f1c, #ffc400 );
+   border: white;
+   border-style: solid;
+   border-radius: 50px;
+   font-size: 110px;
+   padding:45px;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in;
+}
+#torta:hover{
+   font-size: 125px;
+   padding:55px;
+}
+.bdayo1 {
+   padding: 10%;
+   flex: 50%;
+   justify-content: center;
+   margin-top:10%;
+}
+.bdayo2 {
+   padding: 10%;
+   flex: 50%;
+   justify-content: center;
+   margin-top:10%;
+}
+.bdayo{
+   color:antiquewhite;
+   justify-content: center;
+   text-align: center;
+   text-shadow: 1px 1px 4px #000;
+   font-size: 5em;
+}
+.icons::after{
+   content:"";
+   position: absolute;
+   left: 0;
+   width:0;
+   height:2px;
+   background-color: white;
+   bottom:-10px;
+   padding: 0 10px;
+}   
+.icons:hover:after{
+   width:100%;
+   background: linear-gradient(-45deg, #ff4500, #ff6f1c, #fc8f00 );
+}
+.flex1 i{
+   padding:20px;
+   margin:40px;
+   font-size: 60px;
+   color:white;
+   transition-duration: 0.7s;
+   transition-timing-function: ease-in;
+}
+.flex1 i:hover{
+   color: black;
+   opacity: 0.4;
+}
+@media only screen and (max-width: 800px) {
+      .bdayo1{
+         font-size: 15px;
+         margin-top: 40%;
+      }
+      .undetext{
+         font-size: 10px;
+      }
+      #torta{
+         color:white;
+         background: linear-gradient(-45deg, #ff4500, #ff6f1c, #ffc400 );
+         border: white;
+         border-style: solid;
+         border-radius: 50px;
+         font-size: 100px;
+         padding: 45px;
+      }
+      .druga {
+         flex-direction: column;
+       }
+       .bdayo1 {
+         order: 1;
+       }
+       .bdayo2{
+         order: 2;
+       }
+       .kraj {
+         flex-direction: column;
+       }
+       .bdayo1 {
+         order: 1;
+         font-size: 15px;
+       }
+       .bdayo2{
+         order: 2;
+       }
+       .flex1 i{
+         padding: 2px;
+         font-size: 50px;
+       }
+       #comingsoon{
+         font-size:40px;
+       }
+       .undertextend{
+         font-size:14px;
+         margin-top:30px;
+       }
+ }

@@ -246,7 +246,11 @@ body{
          font-size: 18px;
        }
        .img{
-         width:80%;
-         height:80%;
+         width:90%;
+         height:90%;
+       }
+       #torta{
+         font-size: 70px;
+         padding: 35px;
        }
  }

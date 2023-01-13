@@ -4,14 +4,17 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
-
+body{
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
  section{
     width:100%;
     display: flex;
     justify-content:center;
     align-items:center;
     scroll-snap-align: start;
-	height: 100vh;
+	 height: 100vh;
  }
  .prva{
    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -22,6 +25,7 @@
  .prvidiv{
    flex: 100%;
    justify-content: center;
+   margin-bottom: 5%;
  }
  .italic{
    text-decoration: wavy;
@@ -29,7 +33,7 @@
    font-size: 3em;
    font-weight: 900;
    line-height: 1;
-   padding-top: 20%;
+   padding-top: 10%;
  }
  .druga{
    background: linear-gradient(-45deg, #e98f73, #e7973c, #d52323, #d58823);
@@ -150,13 +154,13 @@
    padding: 10%;
    flex: 50%;
    justify-content: center;
-   margin-top:10%;
+   margin-top:5%;
 }
 .bdayo2 {
    padding: 10%;
    flex: 50%;
    justify-content: center;
-   margin-top:10%;
+   margin-top:5%;
 }
 .bdayo{
    color:antiquewhite;
@@ -205,8 +209,7 @@
          border: white;
          border-style: solid;
          border-radius: 50px;
-         font-size: 100px;
-         padding: 45px;
+         padding: 35px;
       }
       .druga {
          flex-direction: column;
@@ -216,6 +219,7 @@
        }
        .bdayo2{
          order: 2;
+         margin-bottom: 15%;
        }
        .kraj {
          flex-direction: column;

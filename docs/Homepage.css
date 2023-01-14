@@ -20,6 +20,12 @@ body{
     display: flex;
     z-index: -10;
 }
+.bdayotext{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height:100%;
+}
 .bubbles span{
     position: relative;
     width:30px;
@@ -76,16 +82,12 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 60px;
 }
-body a{
-    display: flex;
+a{
+    display:flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    position: absolute;
-    top:50%;
-    left:43.5%;
-    padding: 12px 36px;   
     margin: 10px 0;
+    margin: 0 auto;
     color:#fff;
     text-decoration: none; 
     text-transform: uppercase;    
@@ -97,6 +99,8 @@ body a{
     color: orangered;
     border-radius: 40px;  
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:130px;
+    height:60px;
 }
 a:hover{
     color: white;
@@ -112,9 +116,6 @@ a:hover{
         box-shadow: 0 0 0 6px #802a00,
         0 0 25px #682300,
         0 0 50px #662200;
-    }
-    body a{
-        left:35%;
     }
     .bubbles span:nth-child(even){
         box-shadow: 0 0 0 6px #575757,

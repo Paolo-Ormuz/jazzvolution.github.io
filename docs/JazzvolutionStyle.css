@@ -13,6 +13,8 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
+    scroll-snap-align: start;
+	 height: 110vh;
  }
  .prva{
    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -64,6 +66,11 @@ body{
    margin-top:30px;
  }
 
+ .container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 110vh;
+ }
  @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -245,14 +252,3 @@ body{
       margin-bottom: 100px;
    }
  }
-@media only screen and (min-width: 1200px){ 
- .container{
-   scroll-snap-type: y mandatory;
-   overflow-y: scroll;
-   height: 100vh;
-}
-section{
-   scroll-snap-align: start;
-   height: 100vh;
-}
-}

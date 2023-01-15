@@ -111,7 +111,7 @@ a:hover{
 }
 @media only screen and (max-width: 800px) {
     .bubbles span{
-        width:10px;
+        width:6px;
         height:6px;
         box-shadow: 0 0 0 6px #802a00,
         0 0 25px #682300,
@@ -123,7 +123,7 @@ a:hover{
         0 0 50px #ffffff;
     }
     .bubbles1 span{
-        width:2px;
+        width:1px;
         height:1px;
         box-shadow: 0 0 0 2px #802a00,
         0 0 5px #682300,

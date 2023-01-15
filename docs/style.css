@@ -357,6 +357,9 @@ a:hover:after{
         justify-content: center;
         margin-top: 25px;
       }
+      .mail h1{
+        font-size: 14px;
+      }
 }
 
 .icons::after{
